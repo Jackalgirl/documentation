@@ -65,6 +65,10 @@ Scammers will post employment "opportunities" in the form of "we're looking for 
 invite job-seekers to send them a direct/private message. The scam will typically involve some form of credentials/identity theft, and may involve something similar to the 
 [fake check](#fake-check-scam), or an "opportunity" to launder funds as a [money mule](#money-mule).
 
+### The Fake Conversation
+A pair of accounts, typically brand new ones, start posting a "conversation" in public. It may jump straight to promoting the scam, or there may 
+be some initial entirely fake conversation happening before it gets to the promotion of the actual scam. Since it's usually a single scammer copying and pasting from a script, if you are around long enough, you'll see the same conversation between different accounts. Sometimes they will involve some outrageously silly topic (such as one of them announcing that their girlfriend won the "Swedish Rock & Roll Dance Championships") to attract attention.
+
 ### The Scam After
 If you have been scammed, scammers will target you for a follow-on scam by promising to hep you "recover your funds" or "recover your account". This will be especially 
 effective if you have lost a large quantity of assets or the control of an important account: they will exploit your strong desire to believe that you can be made whole
