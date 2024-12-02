@@ -1,4 +1,3 @@
--=-=-=-=-=-
 # Common Scams in the Blockchain Industry
 
 ## Universally common scams
