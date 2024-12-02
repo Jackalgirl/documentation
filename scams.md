@@ -14,7 +14,7 @@ Similar to the Wallet-Draining Contract, above; however, this contract automatic
 ones used to pay for gas) to an account under the scammer's control.  Because revoking contracts requires tokens to pay the gas fees, **these contracts cannot be revoked**.
 
 ### Stealing your Seedphrase -  this scam involves the scammer attempting to get your account's seed phrase from you.  
-See the article "The Importance of Seed Phrases" for more information on why this is such a vulnerability.  In this scam, the scammer  will do this either by claiming that 
+See the article ["The Importance of Seed/Mnemonic Phrases in Crypto/Blockchain"](seed-phrases.md) for more information on why this is such a vulnerability.  In this scam, the scammer  will do this either by claiming that 
 they need to verify your seed phrase against their records (which is not a thing) or that they need this in order to be able to help you.  Alternately, they will tell you that 
 you need to connect to a fake Bittensor wallet site and import your account with your seed phrase, which is indeed how you import your account into a **genuine** wallet interface, 
 but their website will be a fake website designed to steal your seed phrase.  Once they have this, they'll hijack your account and steal your tokens.
