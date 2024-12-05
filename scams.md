@@ -91,7 +91,7 @@ Learning where to find official, accurate information is the *first thing you sh
 
 Get in the habit of looking for the official announcements channel or site, a "Frequently-Asked-Questions" document, and take some time to review the official sources of information such as websites & documentation library. Note only does this give you something to verify any claims you see, but also gets you a sense of the project's goals and the way it operates, which will help you more quickly recognize when something happens that does not feel right.
 
-Spend some time lurking in open chat also, to get a sense of who the official moderators/administrators are and who the community regulars are. This will help you recognize situations such as completely new users inviting you to move your conversation to private or direct channels (out of the view of actual moderators)
+Spend some time lurking in open chat also, to get a sense of who the official moderators/administrators are and who the community regulars are. This will help you recognize situations such as completely new users inviting you to move your conversation to private or direct channels (out of the view of actual moderators).
 
 ### Acknowlege Your Own Limitations
 You are not a fundamentally bad person if you don't know something - you just don't know it yet.  You're also not a stupid person if you don't know it (no one is born with this knowledge).  And it's particularly difficult to know what you don't know. So one of the most powerful (but difficult) things you can do is recognize that you are vulnerable (even if you are convinced that you are not), and to handle this by training yourself to *slow down* and ask yourself the following questions whenever you see an opportunity:
