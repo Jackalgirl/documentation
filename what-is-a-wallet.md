@@ -15,7 +15,7 @@ There's also an additional tendency to call the applications that we use to subm
 
 So does this mean that tokens don't really exist?  Well, no, they don't, not in the sense of "chunks of something, like paper or metal, that can be moved around".  They're just quantiesin blockchain transaction records, that reflect token information pulled from its contract address, typically[^1], the current owner, and whether they are unspent (blockchain protocols will also handleactivities like staking in different ways, but these will be reflected as transactions in the blockchain ledger too).
 
-[^1] The main utility token of a blockchain will not usually have a contract address.  It is generated when the first -- genesis -- block of the blockchain is created.
+[^1]: The main utility token of a blockchain will not usually have a contract address.  It is generated when the first -- genesis -- block of the blockchain is created.
 
 ### It's All About the Keys
 
