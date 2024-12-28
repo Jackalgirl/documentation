@@ -9,7 +9,10 @@ The primary use of signing a message is to prove that you are the account's owne
 ## When Might this be Useful?
 Imagine that someone is offering an NFT or other asset for sale Over the Counter (OTC): this means that they are not using a marketplace or other system designed specially for buying and selling assets.  Instead, they're simply saying, "I have this asset for sale, pay me xL1 and I will transfer it to you."  This obviously requires a significant amount of trust.  Not only do you, as a potential buyer, have to trust that they will in fact send you the asset once you send them the payment, but you have to trust that they actually have the asset in the first place.
 
-For NFTs in particular: if you are looking at the item's listing in the Lamina1 Hub, you can see its owner.  Take, for example, the FujiKnight NFT, here: https://lamina1.com/item/0xab4d-fcb8c7-44937851760156022634111755770988795508464617439675138338516243802549346445721
+For NFTs in particular: if you are looking at the item's listing in the Lamina1 Hub, you can see its owner.  Take, for example, the FujiKnight NFT, here: 
+
+![Screenshot of an NFT Item on the Lamina1 Hub: "The FujiKnight", an NFT created by Jackalgirl and currently owned by Jackalgirl](./images/JG_The-FujiKnight.png)
+_(see this item on the Hub, directly, here: https://lamina1.com/item/0xab4d-fcb8c7-44937851760156022634111755770988795508464617439675138338516243802549346445721)_
 
 If you look at this item, you can see that it is currently owned by Jackalgirl.  Let's say, for example, that Jackalgirl (or someone claiming to be Jackalgirl) claims that they are conducting an OTC sale of this NFT.  One of the things you could do, as a potential buyer, is ask the seller to send you a signed message.  You will be able to verify that this message was signed (or not) by the Jackalgirl account on the Hub; if you can verify it, then you know you are talking to Jackalgirl.  Whether or not she will actually send you the NFT if you pay her is another matter, but at least you know that it's her.[^2]
 
