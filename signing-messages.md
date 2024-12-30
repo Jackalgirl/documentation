@@ -1,4 +1,4 @@
-# Signing Messages in the Lamina1 Hub
+# Verifying Identity using Signed Messages in Lamina1
 **_Why Signing a Message is Useful & How to Do It_**
 
 The Lamina1 Hub supports a feature for signing messages, and for verifying signed messages.  Why might this be useful?
