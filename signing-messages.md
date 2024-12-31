@@ -22,7 +22,7 @@ If you look at this item, you can see that it is currently owned by Jackalgirl. 
 
 First, agree on the _plaintext_ of the message to be signed.  In order to verify a signed message, you must have the _exact_ plaintext message, so take care to select something that isn't potentially ambiguous.
 
-Next, you'll go to the Hub and click on the "signature" icon, which you can find by opening up your details using the triangle next to your account balance.  The icon look like a little scribble of writing, and if you hover over it, you will see the "Sign Message" tooltip:
+Next, you'll go to the Hub and click on the "Sign Message" icon, which you can find by opening up your details using the triangle next to your account balance.  The icon look like a little scribble of handwriting, and if you hover over it, you will see the "Sign Message" tooltip:
 
 ![Screenshot the account details pop-up on a Lamina1 account, with a tooltip that reads "Sign Message" over an icon that looks like handwriting. ](./images/JG_Sign-Message-Icon.png)
 
