@@ -20,7 +20,15 @@ If you look at this item, you can see that it is currently owned by Jackalgirl. 
 
 ## How to Sign a Message
 
+First, agree on the _plaintext_ of the message to be signed.  In order to verify a signed message, you must have the _exact_ plaintext message, so take care to select something that isn't potentially ambiguous.
+
+Next, you'll go to the Hub and click on the "signature" icon, which you can find by opening up your details using the triangle next to your account balance.  The icon look like a little scribble of writing, and if you hover over it, you will see the "Sign Message" tooltip:
+
+![Screenshot the account details pop-up on a Lamina1 account, with a tooltip that reads "Sign Message" over an icon that looks like handwriting. ](./images/JG_Sign-Message-Icon.png)
+
 ## How to Verify a Message
+
+
 
 [^1]: The alphanumeric, or "c-chain" address that you see -- the one that starts with "0x" and is a mixture of letters and numbers -- is actually a shorter string of characters _derived_ from the longer public key.
 [^2]: Or it's someone who has access to her private key.  You see, the network has no way of distinguishing between the real Jackalgirl and, say, a scammer to whom she has foolishly given her private key or the mnemonic phrase that she used to create her account, because that's the whole point of blockchain: to enable you to execute transactions trustlessly, without requiring identification (the private key _is_ the identification).  So even if you have a signed message, it's important to keep this in mind.  For more on public/private keys, see "[The Importance of Seed/Mnemonic Phrases in Crypto/Blockchain](https://github.com/Jackalgirl/documentation/blob/main/seed-phrases.md)" and "[Common Scams in the Blockchain Industry](https://github.com/Jackalgirl/documentation/blob/main/scams.md)".
