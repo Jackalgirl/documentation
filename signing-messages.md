@@ -22,6 +22,8 @@ If you look at this item, you can see that it is currently owned by Jackalgirl. 
 
 First, agree on the _plaintext_ of the message to be signed.  In order to verify a signed message, you must have the _exact_ plaintext message, so take care to select something that isn't potentially ambiguous.
 
+::: **Tip:** Avoid ambiguous or generic messages, which could be spoofed.  A message such as "This message was signed for Ivystive on New Year's Day, 2024, by Jackalgirl" is better than "Have a nice day!" because it contains information in the plaintext that can be verified against other information, such as the username of the signer.:::
+
 Next, you'll go to the Hub and click on the "Sign Message" icon, which you can find by opening up your details using the triangle next to your account balance.  The icon look like a little scribble of handwriting, and if you hover over it, you will see the "Sign Message" tooltip:
 
 ![Screenshot of the account details pop-up on a Lamina1 account, with a tooltip that reads "Sign Message" over an icon that looks like handwriting. ](./images/JG_Sign-Message-Icon.png)
@@ -60,7 +62,7 @@ o "Address to verify": The signer's alphanumeric address
 o "Message to verify": the original plaintext message
 o "Signature": the signature (the hash of the signed message)
 
-![Screenshot of the message signing/verification page on the Lamina1 Hub, with plaintext.](./images/JG_Getting-Someones-Alphanumeric-Address.png)
+![Screenshot of the message signing/verification page on the Lamina1 Hub, with plaintext.](./images/JG_Verify-Message_01.png)
 
 Click "Verify" to verify the message.  If it successfull, you will see a "Message signature successfully verified!" response under the "Verify" button, like this:
 
@@ -70,7 +72,9 @@ A failure, however, will return a "Message signature verification failed" error:
 
 ![Screenshot of the message verification section of the signing/verification page on Lamina1 Hub, with a failure message.](./images/JG_Signed-Message-Failure.png)
 
-Note the issue: the word "an" in the original plaintext has been misspelled.  This results in a different signature (hashed message), one that does not match the provided signature, so the verification has failed.  
+**Do you see the issue?**
+
+The year is incorrect -- it should be "2025" but instead here it's "2024".  The difference of a single character results in an entirely different signature (hashed message), one that does not match the provided signature, so the verification has failed.  
 
 ::: If you are trying to verify a message and verification failed, check your plaintext and make sure that you have spelled everything correctly, and that there are no extra spaces, hidden characters, etc., in the text.  The plaintext must match the original message **exactly** in order for this process to work. :::
 
@@ -84,11 +88,11 @@ Here are the key pieces of the information used in this article.  You can use th
 ```
 **Message to verify:** 
 ```
-Here is an example of a test message
+Happy New Year's Day, 2025, by Jackalgirl
 ```
 **Signature:** 
 ```
-0x2d94482abc631fbf2a165f186f326cdbecf3de36bb2a8f5fe76778ffca55cb252ea3a549ea5dd5e0e8c38d4077c337a56cf41b4ae695ed41d049db3e52961eb21b
+0x7e2bd3a19c130bce034969686a9fb91c43e3e3634e31e86469813c9e7affdad4380ba57a29597726b3df9949d13d3c5a996b36fc6f69a4755f5c0901d50557401c
 ```
 
 [^1]: The alphanumeric, or "c-chain" address that you see -- the one that starts with "0x" and is a mixture of letters and numbers -- is actually a shorter string of characters _derived_ from the longer public key.
