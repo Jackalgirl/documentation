@@ -5,3 +5,4 @@ A work in progress of articles written for the Open Metaverse Foundation (Lamina
 - [The Importance of Seed/Mnemonic Phrases in Crypto/Blockchain](seed-phrases.md)
 - [What IS a Wallet (and why tokens are NOT "in" your wallet)](what-is-a-wallet.md)
 - [Why Tokens Are More Like Giftcards](tokens-as-giftcards.md)
+- [Verifying Identity using Signed Messages in Lamina1](signing-messages.md)
