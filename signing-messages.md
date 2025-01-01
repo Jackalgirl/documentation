@@ -22,7 +22,8 @@ If you look at this item, you can see that it is currently owned by Jackalgirl. 
 
 First, agree on the _plaintext_ of the message to be signed.  In order to verify a signed message, you must have the _exact_ plaintext message, so take care to select something that isn't potentially ambiguous.
 
-::: **Tip:** Avoid ambiguous or generic messages, which could be spoofed.  A message such as "This message was signed for Ivystive on New Year's Day, 2024, by Jackalgirl" is better than "Have a nice day!" because it contains information in the plaintext that can be verified against other information, such as the username of the signer.:::
+> [!TIP]
+> Avoid ambiguous or generic messages, which could be spoofed.  A message such as "This message was signed for Ivystive on New Year's Day, 2024, by Jackalgirl" is better than "Have a nice day!" because it contains information in the plaintext that can be verified against other information, such as the username of the signer.
 
 Next, you'll go to the Hub and click on the "Sign Message" icon, which you can find by opening up your details using the triangle next to your account balance.  The icon look like a little scribble of handwriting, and if you hover over it, you will see the "Sign Message" tooltip:
 
@@ -32,7 +33,8 @@ A modal will appear, and you can input your plaintext and click "sign" to sign t
 
 ![Screenshot of the modal to sign a message, which includes a field for the message and two buttons: "close" and "sign" ](./images/JG_Sign-Message-Modal.png)
 
-::: **Important!** Watch out for leading or trailing blank spaces in your plaintext, as this will change the signature, and if someone checking your message doesn't include the blank space(s), the message will not verify. :::
+> [!IMPORTANT]
+> Watch out for leading or trailing blank spaces in your plaintext, as this will change the signature, and if someone checking your message doesn't include the blank space(s), the message will not verify.
 
 Once you have clicked "sign", you will see something like the following, which is a hashed version of your plaintext message created using your private key, which is referred to as the **signature**:
 
@@ -47,7 +49,8 @@ o The _exact plaintext_ message that was signed.
 o The signature (that is, the hash of the signed message).
 o The alphanumeric (aka "c-chain") address of the signer.
 
-::: **Important!** Your plaintext copy of the message must match the original plaintext signed message exactly, or the verification will fail! :::
+> [!IMPORTANT]
+> Your plaintext copy of the message must match the original plaintext signed message exactly, or the verification will fail!
 
 To get a user's alphanumeric address, go to their profile on Lamina1: `https://lamina1.com/profile/[user's Lamina1 username]`
 
@@ -55,7 +58,7 @@ For example, here is the profile page of `@Jackalgirl`:
 
 ![Screenshot the profile page on the Lamina1 Hub for user Jackalgirl.](./images/JG_Getting-Someones-Alphanumeric-Address.png)
 
-If you click on the small triangle to the right of the user's name, you will see a pop-up like the one shown in the screenshot above, which will allow you to copy either the user's username or their alphanumeric address to your clipboar.
+If you click on the small triangle to the right of the user's name, you will see a pop-up like the one shown in the screenshot above, which will allow you to copy either the user's username or their alphanumeric address to your clipboard.
 
 Next, go to https://lamina1.com/sign to access all signing/verification functions (this is the page that the "verify message" link in the "sign message" modal will take you to).  You'll see that you can sign a message at the top of the page, but scroll down to get to the verification section, where you will fill in
 o "Address to verify": The signer's alphanumeric address
@@ -76,7 +79,8 @@ A failure, however, will return a "Message signature verification failed" error:
 
 The year is incorrect -- it should be "2025" but instead here it's "2024".  The difference of a single character results in an entirely different signature (hashed message), one that does not match the provided signature, so the verification has failed.  
 
-::: If you are trying to verify a message and verification failed, check your plaintext and make sure that you have spelled everything correctly, and that there are no extra spaces, hidden characters, etc., in the text.  The plaintext must match the original message **exactly** in order for this process to work. :::
+> [!TIP]
+> If you are trying to verify a message and verification failed, check your plaintext and make sure that you have spelled everything correctly, and that there are no extra spaces, hidden characters, etc., in the text.  The plaintext must match the original message **exactly** in order for this process to work. 
 
 ## Try It Yourself!
 
