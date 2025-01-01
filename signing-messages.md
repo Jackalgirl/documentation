@@ -24,11 +24,57 @@ First, agree on the _plaintext_ of the message to be signed.  In order to verify
 
 Next, you'll go to the Hub and click on the "Sign Message" icon, which you can find by opening up your details using the triangle next to your account balance.  The icon look like a little scribble of handwriting, and if you hover over it, you will see the "Sign Message" tooltip:
 
-![Screenshot the account details pop-up on a Lamina1 account, with a tooltip that reads "Sign Message" over an icon that looks like handwriting. ](./images/JG_Sign-Message-Icon.png)
+![Screenshot of the account details pop-up on a Lamina1 account, with a tooltip that reads "Sign Message" over an icon that looks like handwriting. ](./images/JG_Sign-Message-Icon.png)
+
+A modal will appear, and you can input your plaintext and click "sign" to sign the message.
+
+![Screenshot of the modal to sign a message, which includes a field for the message and two buttons: "close" and "sign" ](./images/JG_Sign-Message-Modal.png)
+
+::: **Important!** Watch out for leading or trailing blank spaces in your plaintext, as this will change the signature, and if someone checking your message doesn't include the blank space(s), the message will not verify. :::
+
+Once you have clicked "sign", you will see something like the following, which is a hashed version of your plaintext message created using your private key, which is referred to as the **signature**:
+
+![Screenshot of the modal now showing the hashed message with a "copy to clipboard" icon, a link to "verify message", and two buttons: "close" and "reset".](./images/JG_Sign-Message-Modal_Results.png)
+
+You can use the "copy to clipboard" icon (the two overlapping squares) to copy this message to your clipboard so that you can provide it to anyone who needs to verify the message.
 
 ## How to Verify a Message
 
+Before you can verify a message, you will need three pieces of information:
+o The _exact plaintext_ message that was signed.
+o The signature (that is, the hash of the signed message).
+o The alphanumeric (aka "c-chain") address of the signer.
 
+::: **Important!** Your plaintext copy of the message must match the original plaintext signed message exactly, or the verification will fail! :::
+
+To get a user's alphanumeric address, go to their profile on Lamina1: `https://lamina1.com/profile/[user's Lamina1 username]`
+
+For example, here is the profile page of `@Jackalgirl`:
+
+![Screenshot the profile page on the Lamina1 Hub for user Jackalgirl.](./images/JG_Getting-Someones-Alphanumeric-Address.png)
+
+If you click on the small triangle to the right of the user's name, you will see a pop-up like the one shown in the screenshot above, which will allow you to copy either the user's username or their alphanumeric address to your clipboar.
+
+Next, go to https://lamina1.com/sign to access all signing/verification functions (this is the page that the "verify message" link in the "sign message" modal will take you to).  You'll see that you can sign a message at the top of the page, but scroll down to get to the verification section, where you will fill in
+o "Address to verify": The signer's alphanumeric address
+o "Message to verify": the original plaintext message
+o "Signature": the signature (the hash of the signed message)
+
+![Screenshot of the message signing/verification page on the Lamina1 Hub, with plaintext.](./images/JG_Getting-Someones-Alphanumeric-Address.png)
+
+Click "Verify" to verify the message.  If it successfull, you will see a "Message signature successfully verified!" response under the "Verify" button, like this:
+
+![Screenshot of the message verification section of the signing/verification page on Lamina1 Hub, with a success message.](./images/JG_Signed-Message-Success.png)
+
+A failure, however, will return a "Message signature verification failed" error:
+
+![Screenshot of the message verification section of the signing/verification page on Lamina1 Hub, with a failure message.](./images/JG_Signed-Message-Failure.png)
+
+Note the issue: the word "an" in the original plaintext has been misspelled.  This results in a different signature (hashed message), one that does not match the provided signature, so the verification has failed.  
+
+::: If you are trying to verify a message and verification failed, check your plaintext and make sure that you have spelled everything correctly, and that there are no extra spaces, hidden characters, etc., in the text.  The plaintext must match the original message **exactly** in order for this process to work. :::
+
+## That's all there is to it -- enjoy!
 
 [^1]: The alphanumeric, or "c-chain" address that you see -- the one that starts with "0x" and is a mixture of letters and numbers -- is actually a shorter string of characters _derived_ from the longer public key.
 [^2]: Or it's someone who has access to her private key.  You see, the network has no way of distinguishing between the real Jackalgirl and, say, a scammer to whom she has foolishly given her private key or the mnemonic phrase that she used to create her account, because that's the whole point of blockchain: to enable you to execute transactions trustlessly, without requiring identification (the private key _is_ the identification).  So even if you have a signed message, it's important to keep this in mind.  For more on public/private keys, see "[The Importance of Seed/Mnemonic Phrases in Crypto/Blockchain](https://github.com/Jackalgirl/documentation/blob/main/seed-phrases.md)" and "[Common Scams in the Blockchain Industry](https://github.com/Jackalgirl/documentation/blob/main/scams.md)".
