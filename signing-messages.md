@@ -78,9 +78,12 @@ Note the issue: the word "an" in the original plaintext has been misspelled.  Th
 
 Here are the key pieces of the information used in this article.  You can use this information at https://lamina1.com/sign to verify this message yourself:
 
-**Address to verify:** ```0x3e0fe0Ee1BF683F60e1193768C9283DCA7469DD8```
-**Message to verify:** ```Here is an example of a test message```
-**Signature:** ```0x2d94482abc631fbf2a165f186f326cdbecf3de36bb2a8f5fe76778ffca55cb252ea3a549ea5dd5e0e8c38d4077c337a56cf41b4ae695ed41d049db3e52961eb21b```
+**Address to verify:** ```bash
+0x3e0fe0Ee1BF683F60e1193768C9283DCA7469DD8```
+**Message to verify:** ```bash
+Here is an example of a test message```
+**Signature:** ```bash
+0x2d94482abc631fbf2a165f186f326cdbecf3de36bb2a8f5fe76778ffca55cb252ea3a549ea5dd5e0e8c38d4077c337a56cf41b4ae695ed41d049db3e52961eb21b```
 
 [^1]: The alphanumeric, or "c-chain" address that you see -- the one that starts with "0x" and is a mixture of letters and numbers -- is actually a shorter string of characters _derived_ from the longer public key.
 [^2]: Or it's someone who has access to her private key.  You see, the network has no way of distinguishing between the real Jackalgirl and, say, a scammer to whom she has foolishly given her private key or the mnemonic phrase that she used to create her account, because that's the whole point of blockchain: to enable you to execute transactions trustlessly, without requiring identification (the private key _is_ the identification).  So even if you have a signed message, it's important to keep this in mind.  For more on public/private keys, see "[The Importance of Seed/Mnemonic Phrases in Crypto/Blockchain](https://github.com/Jackalgirl/documentation/blob/main/seed-phrases.md)" and "[Common Scams in the Blockchain Industry](https://github.com/Jackalgirl/documentation/blob/main/scams.md)".
