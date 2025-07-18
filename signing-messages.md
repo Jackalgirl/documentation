@@ -80,7 +80,7 @@ A failure, however, will return a "Message signature verification failed" error:
 The year is incorrect -- it should be "2025" but instead here it's "2024".  The difference of a single character results in an entirely different signature (hashed message), one that does not match the provided signature, so the verification has failed.  
 
 > [!TIP]
-> If you are trying to verify a message and verification failed, check your plaintext and make sure that you have spelled everything correctly, and that there are no extra spaces, hidden characters, etc., in the text.  The plaintext must match the original message **exactly** in order for this process to work. 
+> If you are trying to verify a message and verification failed, check your plaintext and make sure that you have spelled everything correctly, and that there are no extra spaces, hidden characters, upper-case letters instead of lower-case letters or vice versa, etc., in the text.  The plaintext must match the original message **exactly** in order for this process to work. 
 
 ## Try It Yourself!
 
