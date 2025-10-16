@@ -1,6 +1,8 @@
 # Verifying Identity using Signed Messages in Lamina1
 **_Why Signing a Message is Useful & How to Do It_**
 
+**Note: As of early- to mid-October 2025, the "Sign & Verify" page has been removed from the Lamina1 Hub. I will update this article if the functionality is returned to the Hub in the future.**
+
 The Lamina1 Hub supports a feature for signing messages, and for verifying signed messages.  Why might this be useful?
 
 ## Identify Verification
